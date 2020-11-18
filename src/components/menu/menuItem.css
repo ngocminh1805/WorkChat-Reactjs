@@ -1,0 +1,24 @@
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 23px 12px 23px
+}
+
+.menu-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.menu-item:hover {
+  border-left: 3px solid #ff7f08;
+  background-color: #0151cd;
+}
+
+.menu-item-title {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #fff;
+  width: 200;
+
+}

@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.body-container{
+  flex: 1;
+  display: flex;
+  /* height: 100%-50px; */
+  border: 1px solid #E6E8EB;
+  flex-direction: row;
+  
+}
+.body-column-1{
+  height: 100%;
+  width: 70px;
+  /* border: 1px solid #E6E8EB; */
 }
 
-.App-link {
-  color: #61dafb;
+.body-column-2{
+  height: 100%;
+  flex: 6;
+  /* border: 1px solid #E6E8EB; */
+  border-left: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body-column-3{
+  height: 100%;
+  flex: 20;
+  border: 1px solid #E6E8EB;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.boxchat-header{
+  width: 100%;
+  height: 60px; 
+  border: 1px solid #E6E8EB;
+  border-top: none;
+}
+.boxchat-input-message{
+  width: 100%;
+  height: 60px;
+  border: 1px solid #E6E8EB;
+  position: fixed;
+  bottom: 0px;
+}
+.boxchat-body{
+  flex: 1;
+  width: 100%;
+  border: 1px solid #E6E8EB;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+
+
+/* scroll bar  */
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
