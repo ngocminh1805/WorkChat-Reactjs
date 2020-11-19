@@ -6,7 +6,7 @@
     padding: 35px 0px 30px 0px;
     display: flex;
     flex-direction: column;
-    transition: 2s;
+    transition: 0.2s;
     overflow-x: hidden;
 }
 

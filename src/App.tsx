@@ -1,21 +1,27 @@
-import * as React from 'react';
+import * as React from "react";
 import "./App.css";
+import ChatlistHeader from "./components/chatlist-header/chatlistHeader";
+import ChatList from "./components/chatList/chatList";
 import Header from "./components/header/header";
 import Menu from "./components/menu/menu";
-
+import SearchBar from "./components/searchbar/searchbar";
 
 class App extends React.PureComponent {
-
-
-  render(){
+  render() {
     return (
-      <div className="container" style={{ height: window.innerHeight}}>
+      <div className="container" style={{ height: window.innerHeight }}>
         <Header />
-        <div className="body-container">
+        <div className="body-container"  style={{ height: window.innerHeight-50}} >
           <div className="body-column-1">
-            <Menu/>
+            <Menu />
           </div>
-          <div className="body-column-2"></div>
+          <div className="body-column-2">
+            <ChatlistHeader />
+            <SearchBar />
+            {/* <div style ={{flex:1}}> */}
+              <ChatList />
+            {/* </div> */}
+          </div>
           <div className="body-column-3">
             <div className="boxchat-header"></div>
             <div className="boxchat-body"></div>
