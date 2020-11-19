@@ -37,41 +37,19 @@ class Menu extends React.PureComponent<Props,State> {
   }
 
   menuSmall = [{ icon: meessage }, { icon: chat }, { icon: bell }];
-  menuLarge = [
-    { icon: home, title: "Trang chủ" },
-    { icon: dashboard, title: "Dashboard" },
-    { icon: aim, title: "Mục tiêu" },
-    { icon: todo, title: "Công việc" },
-    { icon: todoComplete, title: "Yêu cầu phê duyệt" },
-    { icon: project, title: "Dự án" },
-    { icon: folder, title: "Drive" },
-    { icon: todoStar, title: "Đánh giá" },
-    { icon: directory, title: "Trung tâm nhân lực" },
-    { icon: meessage, title: "Trò chuyện" },
-    { icon: setting, title: "Quản trị" },
-  ];
 
- 
-
- 
   render() {
     return (
       <div className="menu-container " id="menu-container">
         <div className="menu-header">
-          {/* {this.renderlist()} */}
           <div id="smallMenu">
             {this.menuSmall.map((item) => (
               <MenuItem icon={item.icon} />
             ))}
           </div>
-          <div id="largeMenu">
-            {this.menuLarge.map((item) => (
-              <MenuItem icon={item.icon} title={item.title} />
-            ))}
-          </div>
         </div>
         <div className="menu-footer">
-          {/* <MenuItem icon={question} /> */}
+          <MenuItem icon={question} />
         </div>
       </div>
     );

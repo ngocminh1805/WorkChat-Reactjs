@@ -2,6 +2,7 @@ import * as React from "react";
 import "./App.css";
 import ChatlistHeader from "./components/chatlist-header/chatlistHeader";
 import ChatList from "./components/chatList/chatList";
+import GlobalMenu from "./components/global-menu/globalMenu";
 import Header from "./components/header/header";
 import Menu from "./components/menu/menu";
 import SearchBar from "./components/searchbar/searchbar";
@@ -10,6 +11,7 @@ class App extends React.PureComponent {
   render() {
     return (
       <div className="container" style={{ height: window.innerHeight }}>
+        <GlobalMenu/>
         <Header />
         <div className="body-container"  style={{ height: window.innerHeight-50}} >
           <div className="body-column-1">

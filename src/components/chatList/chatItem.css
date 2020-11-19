@@ -39,10 +39,14 @@
     line-height: 23px;
     font-weight: bold;
     margin-bottom: 4px;
+    min-width: 200px;
+    overflow-x: hidden;
 }
 
 .chat-message{
     font-size: 14px;
+    width: 100%;
+    overflow-x: hidden;
     
 }
 .chatitem-right-ctn{
