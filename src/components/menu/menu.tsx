@@ -2,10 +2,10 @@ import * as React from "react";
 import "./menu.css";
 
 // import icon
-import meessage from "../../assets/message.png";
-import bell from "../../assets/bell-light.png";
-import chat from "../../assets/Line.png";
-import question from "../../assets/question-circle-light.png";
+import meessage from "../../assets/menu-icon/message.svg";
+import bell from "../../assets/menu-icon/bell.svg";
+import chat from "../../assets/menu-icon/usergroup.svg";
+import question from "../../assets/menu-icon/question.svg";
 import MenuItem from "./menuItem";
 
 interface Props {}

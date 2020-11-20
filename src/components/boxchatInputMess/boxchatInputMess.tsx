@@ -1,8 +1,8 @@
 import * as React from 'react';
 import './boxchatInputMess.css'
-import gim from '../../assets/gim.png'
-import smile from '../../assets/smile.png'
-import send from '../../assets/send.png'
+import gim from '../../assets/gim.svg'
+import smile from '../../assets/smile.svg'
+import send from '../../assets/send.svg'
 
 interface Props{
 

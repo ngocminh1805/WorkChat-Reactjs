@@ -1,7 +1,7 @@
 import * as React from 'react';
 import "./header.css"
-import logo from "../../assets/logo.png"
-import menu from "../../assets/menu.png"
+import logo from "../../assets/logo.svg"
+import menu from "../../assets/menu.svg"
 import image from "../../assets/image.jpg"
 
 

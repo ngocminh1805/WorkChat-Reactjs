@@ -1,15 +1,11 @@
 import * as React from "react";
 import "./App.css";
-import BoxchatHeader from "./components/boxchatheader/boxchatheader";
 import ChatlistHeader from "./components/chatlist-header/chatlistHeader";
 import ChatList from "./components/chatList/chatList";
 import GlobalMenu from "./components/global-menu/globalMenu";
 import Header from "./components/header/header";
 import Menu from "./components/menu/menu";
 import SearchBar from "./components/searchbar/searchbar";
-
-import image from "./assets/image.jpg";
-import BoxchatInputMessage from "./components/boxchatInputMess/boxchatInputMess";
 import BoxChat from "./components/boxchat/boxchat";
 
 class App extends React.PureComponent {

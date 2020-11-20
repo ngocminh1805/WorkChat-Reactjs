@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./chatlistHeader.css";
-import icon from "../../assets/edit.png";
+import icon from "../../assets/edit.svg";
 
 class ChatlistHeader extends React.PureComponent {
   render() {

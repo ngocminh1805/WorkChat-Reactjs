@@ -1,8 +1,8 @@
 import * as React from "react";
 import "./boxchatheader.css";
-import camera from "../../assets/camera.png";
-import search from "../../assets/search.png";
-import more from "../../assets/More.png";
+import camera from "../../assets/camera.svg";
+import search from "../../assets/search.svg";
+import more from "../../assets/more.svg";
 
 interface Props {
   userImage: any;

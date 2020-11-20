@@ -3,19 +3,19 @@ import MenuItem from "../menu/menuItem";
 import "./globalMenu.css";
 
 //
-import aim from "../../assets/menu-icon/aim.png";
-import dashboard from "../../assets/menu-icon/dashboard.png";
-import directory from "../../assets/menu-icon/directory.png";
-import folder from "../../assets/menu-icon/folder.png";
-import project from "../../assets/menu-icon/project.png";
-import setting from "../../assets/menu-icon/setting.png";
-import todo from "../../assets/menu-icon/todo.png";
-import todoComplete from "../../assets/menu-icon/todo-complete.png";
-import todoStar from "../../assets/menu-icon/todo-star.png";
-import home from "../../assets/menu-icon/home.png";
-import meessage from "../../assets/message.png";
-import close from "../../assets/close.png";
-import logo from "../../assets/logo.png";
+import aim from "../../assets/menu-icon/target.svg";
+import dashboard from "../../assets/menu-icon/dashboard.svg";
+import directory from "../../assets/menu-icon/userprofile.svg";
+import folder from "../../assets/menu-icon/folder.svg";
+import project from "../../assets/menu-icon/tabs.svg";
+import setting from "../../assets/menu-icon/setting.svg";
+import todo from "../../assets/menu-icon/tasklist.svg";
+import todoComplete from "../../assets/menu-icon/task check.svg";
+import todoStar from "../../assets/menu-icon/task review.svg";
+import home from "../../assets/menu-icon/home.svg";
+import meessage from "../../assets/menu-icon/message.svg";
+import close from "../../assets/menu-icon/close.svg";
+import logo from "../../assets/logo.svg";
 
 class GlobalMenu extends React.PureComponent {
   menuLarge = [

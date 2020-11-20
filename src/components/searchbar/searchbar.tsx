@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./searchbar.css";
-import search from "../../assets/search.png";
+import search from "../../assets/search.svg";
 
 class SearchBar extends React.PureComponent {
   render() {
