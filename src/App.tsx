@@ -7,6 +7,7 @@ import Header from "./components/header/header";
 import Menu from "./components/menu/menu";
 import SearchBar from "./components/searchbar/searchbar";
 import BoxChat from "./components/boxchat/boxchat";
+import image from './assets/image.jpg'
 
 class App extends React.PureComponent {
   render() {
@@ -27,8 +28,8 @@ class App extends React.PureComponent {
             <ChatList />
           </div>
           <div className="body-column-3">
-            <BoxChat/>
-            {/* <BoxChat profile = {{userImage:image, userName :"Minh Bé Tí", isOnline: true}}/> */}
+            {/* <BoxChat/> */}
+            <BoxChat profile = {{userImage:image, userName :"Minh Bé Tí", isOnline: true}}/>
           </div>
         </div>
       </div>
