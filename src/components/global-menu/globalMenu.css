@@ -1,13 +1,23 @@
+
+.global-menu-full.active{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+}
 .global-menu-container{
     width: 0px;
     height: 100%;
     position: absolute;
     background-color: #fff;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     transition: 0.2s;
+    z-index: 1;
+    
 }
 .global-menu-container.active{
     width: 220px;
@@ -31,3 +41,17 @@
     width: 24px;
     margin-right: 10px;
 }
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    cursor: pointer;
+  }

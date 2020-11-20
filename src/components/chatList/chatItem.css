@@ -58,11 +58,11 @@
 }
 .chat-item-time{
     color: #808999;
-    margin-bottom: 7px;
+    margin-bottom: 12px;
 }
 .isSeen-icon{
-    height: 16px;
-    width: 16px;
+    height: 10px;
+    width: 10px;
     border-radius: 16px;
     background-color: #FF7F08;
 }

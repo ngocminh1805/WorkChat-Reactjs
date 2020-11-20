@@ -32,28 +32,37 @@ class GlobalMenu extends React.PureComponent {
     { icon: setting, title: "Quản trị" },
   ];
 
-
   onClose = () => {
-      const menu : any = document.getElementById('global-menu-container');
-      menu.classList.remove("active");
-  }
-
+    const menu: any = document.getElementById("global-menu-container");
+    menu.classList.remove("active");
+    const layer: any = document.getElementById("global-menu-full");
+    layer.classList.remove("active");
+  };
 
   render() {
     return (
-      <div className="global-menu-container" id = 'global-menu-container'>
-        <div className="global-menu-header">
-          <div style={{ flex: 1 , display:"flex" , alignItems:"center", justifyContent:"center"}}>
-            <img src={logo} className="web-logo" />
+      <div className = "global-menu-full" id = "global-menu-full" >
+        <div className="global-menu-container" id="global-menu-container">
+          <div className="global-menu-header">
+            <div
+              style={{
+                flex: 1,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img src={logo} className="web-logo" />
+            </div>
+            <div onClick={this.onClose}>
+              <img src={close} className="close-btn" />
+            </div>
           </div>
-          <div onClick = {this.onClose}>
-            <img src={close} className="close-btn" />
+          <div className="global-menu-body">
+            {this.menuLarge.map((item) => (
+              <MenuItem icon={item.icon} title={item.title} />
+            ))}
           </div>
-        </div>
-        <div className="global-menu-body">
-          {this.menuLarge.map((item) => (
-            <MenuItem icon={item.icon} title={item.title} />
-          ))}
         </div>
       </div>
     );
