@@ -20,6 +20,14 @@ class ChatList extends React.PureComponent {
       userImage: image,
       message: "danh sách các lỗi cần fix",
       isOnline: true,
+      isSeen: true,
+      time: new Date(),
+    },
+    {
+      userName: "Ngọc Minh",
+      userImage: image,
+      message: "danh sách các lỗi cần fix",
+      isOnline: true,
       isSeen: false,
       time: new Date(),
     },
@@ -28,7 +36,7 @@ class ChatList extends React.PureComponent {
       userImage: image,
       message: "danh sách các lỗi cần fix",
       isOnline: true,
-      isSeen: false,
+      isSeen: true,
       time: new Date(),
     },
     {
@@ -36,8 +44,9 @@ class ChatList extends React.PureComponent {
       userImage: image,
       message: "danh sách các lỗi cần fix",
       isOnline: true,
-      isSeen: false,
+      isSeen: true,
       time: new Date(),
+      isGroup: true
     },
     {
       userName: "Ngọc Minh",
@@ -54,6 +63,7 @@ class ChatList extends React.PureComponent {
       isOnline: true,
       isSeen: true,
       time: new Date(),
+      isGroup: true
     },
     {
       userName: "Ngọc Minh",
@@ -62,6 +72,7 @@ class ChatList extends React.PureComponent {
       isOnline: true,
       isSeen: true,
       time: new Date(),
+      isGroup: true
     },
     {
       userName: "Ngọc Minh",
@@ -70,14 +81,7 @@ class ChatList extends React.PureComponent {
       isOnline: true,
       isSeen: true,
       time: new Date(),
-    },
-    {
-      userName: "Ngọc Minh",
-      userImage: image,
-      message: "danh sách các lỗi cần fix",
-      isOnline: true,
-      isSeen: true,
-      time: new Date(),
+      isGroup: true
     },
     {
       userName: "Ngọc Minh",
@@ -202,6 +206,7 @@ class ChatList extends React.PureComponent {
         userName={item.userName}
         userImage={item.userImage}
         message={item.message}
+        isGroup = {item.isGroup}
       />
     </li>
   ));

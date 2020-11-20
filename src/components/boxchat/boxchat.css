@@ -1,0 +1,17 @@
+.boxchat-container{
+    height: 100%;
+    width: 100%;
+}
+
+.boxchat-container-null{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.null-image{
+    height: 250px;
+    width: 250px;
+}

@@ -63,7 +63,7 @@ class GlobalMenu extends React.PureComponent {
               <MenuItem icon={item.icon} title={item.title} />
             ))}
           </div>
-        </div>
+        </div>  
       </div>
     );
   }

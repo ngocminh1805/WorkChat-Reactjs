@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import "./menu.css";
 
 // import icon
@@ -8,28 +8,12 @@ import chat from "../../assets/Line.png";
 import question from "../../assets/question-circle-light.png";
 import MenuItem from "./menuItem";
 
-// import menu icon
-import aim from "../../assets/menu-icon/aim.png";
-import dashboard from "../../assets/menu-icon/dashboard.png";
-import directory from "../../assets/menu-icon/directory.png";
-import folder from "../../assets/menu-icon/folder.png";
-import project from "../../assets/menu-icon/project.png";
-import setting from "../../assets/menu-icon/setting.png";
-import todo from "../../assets/menu-icon/todo.png";
-import todoComplete from "../../assets/menu-icon/todo-complete.png";
-import todoStar from "../../assets/menu-icon/todo-star.png";
-import home from "../../assets/menu-icon/home.png";
+interface Props {}
 
-interface Props{
+interface State {}
 
-}
-
-interface State{
-
-}
-
-class Menu extends React.PureComponent<Props,State> {
-  constructor(props:Props) {
+class Menu extends React.PureComponent<Props, State> {
+  constructor(props: Props) {
     super(props);
     this.state = {
       active: false,
@@ -37,6 +21,19 @@ class Menu extends React.PureComponent<Props,State> {
   }
 
   menuSmall = [{ icon: meessage }, { icon: chat }, { icon: bell }];
+
+  componentDidMount() {
+    const btn = document.getElementsByClassName("menu-item");
+    var i: number;
+    for (i = 0; i < btn.length; i++) {
+      const btn_item: any = btn[i];
+      btn[i].addEventListener("click", () => {
+        btn_item.classList.toggle("active");
+        
+      });
+
+    }
+  }
 
   render() {
     return (

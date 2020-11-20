@@ -10,6 +10,7 @@ import SearchBar from "./components/searchbar/searchbar";
 
 import image from "./assets/image.jpg";
 import BoxchatInputMessage from "./components/boxchatInputMess/boxchatInputMess";
+import BoxChat from "./components/boxchat/boxchat";
 
 class App extends React.PureComponent {
   render() {
@@ -30,16 +31,8 @@ class App extends React.PureComponent {
             <ChatList />
           </div>
           <div className="body-column-3">
-            <BoxchatHeader
-              isOnline={true}
-              userImage={image}
-              userName="Minh bé tí"
-            />
-            <div className="boxchat-body">
-              {/* <div className = "boxchat-input-message"> */}
-                <BoxchatInputMessage />
-              {/* </div> */}
-            </div>
+            <BoxChat/>
+            {/* <BoxChat profile = {{userImage:image, userName :"Minh Bé Tí", isOnline: true}}/> */}
           </div>
         </div>
       </div>

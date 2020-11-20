@@ -11,6 +11,8 @@ class MenuItem extends React.PureComponent<Props> {
     super(props);
   }
 
+  
+
   onClickItem = () => {
     console.log('Click menu item ',this.props.title);
     
@@ -19,10 +21,10 @@ class MenuItem extends React.PureComponent<Props> {
   render() {
     const { icon, title } = this.props;
     return (
-      <div className="menu-item">
+    <button className="menu-item">
         <img src={icon} className="menu-icon" />
         <span className="menu-item-title">{title}</span>
-      </div>
+      </button>
     );
   }
 }

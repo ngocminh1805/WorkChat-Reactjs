@@ -9,17 +9,19 @@ interface Props {
   time: Date;
   isSeen: boolean;
   isOnline: boolean;
-  isGroup?: boolean | false
+  isGroup?: boolean | false;
 }
 
 interface State {}
 
 class ChatItem extends React.PureComponent<Props> {
   render() {
-    const { userImage, userName, message, time, isSeen, isOnline } = this.props;
+    const { userImage, userName, message, time, isSeen, isOnline , isGroup} = this.props;
     return (
-      <div className="chatitem-container" 
-      style = {{backgroundColor: isSeen? "" : "#EEF0F7"}}>
+      <div
+        className="chatitem-container"
+        style={{ backgroundColor: isSeen ? "" : "#EEF0F7" }}
+      >
         <div className="chatitem-avatar">
           <div
             className="status-light"
@@ -28,7 +30,11 @@ class ChatItem extends React.PureComponent<Props> {
           <img src={userImage} className="avatar-image" />
         </div>
         <div className="chatitem-content">
-          <span className="chat-userName">{userName}</span>
+          <div className ='chat-userName-ctn'>
+            <span className="chat-userName">{userName}</span>
+            <div className = "grouptag" style = {{display: isGroup? 'flex':'none'}}>NHÓM</div>
+          </div>
+
           <span
             className="chat-message"
             style={{ fontWeight: isSeen ? "normal" : "bold" }}
